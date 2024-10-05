@@ -23,15 +23,17 @@ rootProject.allprojects {
     }
 }
 
-apply plugin: 'com.android.library'
+ plugin { 
+    id 'com.android.library'
+ }
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 34
     buildToolsVersion '27.0.3'
-    namespace "com.yourcompany.appcenteranalytics"  
+    namespace "com.yourcompany.appcenter.analytics"  
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 27
+        minSdkVersion 26
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
