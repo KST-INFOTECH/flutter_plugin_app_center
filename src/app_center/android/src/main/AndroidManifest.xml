@@ -1,4 +1,3 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  >
+  package="com.yourcompany.appcenter">
 </manifest>
-<!-- package="com.yourcompany.appcenter" -->
