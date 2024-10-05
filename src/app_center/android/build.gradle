@@ -24,12 +24,14 @@ rootProject.allprojects {
 }
 
 plugins {
-      id 'com.android.library'
-       }
+    id 'com.android.library'
+}
+
 
 android {
-    namespace "com.yourcompany.appcenter"
+    
     compileSdkVersion 34
+    namespace "com.yourcompany.appcenter"
     buildToolsVersion '27.0.3'
     defaultConfig {
         minSdkVersion 26
