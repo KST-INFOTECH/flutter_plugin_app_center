@@ -1,8 +1,13 @@
+plugins {
+    id 'com.android.library'
+}
+
 group 'com.aloisdeniel.flutter.app_center'
 version '1.0-SNAPSHOT'
 
 buildscript {
     repositories {
+        google()
         jcenter()
         maven {
             url "https://maven.google.com"
@@ -23,9 +28,7 @@ rootProject.allprojects {
     }
 }
 
-plugins {
-    id 'com.android.library'
-}
+
 
 
 android {
