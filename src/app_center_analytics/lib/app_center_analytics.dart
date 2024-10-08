@@ -26,7 +26,7 @@
 //         'properties': properties ?? <String, String>{},
 //       });
 // }
- import 'dart:async';
+import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart' show defaultTargetPlatform;
 import 'package:flutter/foundation.dart' show TargetPlatform;
