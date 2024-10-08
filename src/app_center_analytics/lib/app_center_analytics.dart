@@ -8,11 +8,11 @@ class AppCenterAnalytics {
       ? "MSAnalytics"
       : "com.microsoft.appcenter.analytics.Analytics";
 
-  static const MethodChannel _channel = const MethodChannel(
+  static const MethodChannel _channel = MethodChannel(
       'aloisdeniel.github.com/flutter_plugin_appcenter/appcenter_analytics');
 
   static Future<bool> get isEnabled =>
-      _channel.invokeMethod('isEnabled').then( => r as bool);
+      _channel.invokeMethod('isEnabled').then((result) => result as bool);
 
   static Future<void> setEnabled(bool isEnabled) =>
       _channel.invokeMethod('setEnabled', <String, bool>{
@@ -25,7 +25,6 @@ class AppCenterAnalytics {
         'properties': properties ?? <String, String>{},
       });
 }
-
 
 // import 'dart:async';
 
